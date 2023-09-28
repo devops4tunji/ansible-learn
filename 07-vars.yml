@@ -1,1 +1,35 @@
-- name:
+- name: demo of a variable
+  hosts: localhost
+  tasks:
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: hello world
+    - name: print my name
+      ansible.builtin.debug:
+        msg: what is my name
+
+- name: demo of a variable
+  hosts: localhost
+  vars:
+    url: www.gunners.com
+  tasks:
+    - name: print hello world 5
+      ansible.builtin.debug:
+        msg: "{{ url }}"
+      vars:
+        url: www.gunners.com
+
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: hello world 4
+
+    - name: print hello world 6
+      ansible.builtin.debug:
+        msg: "{{ url }}"
+
+- name: demo of a roles variable
+  hosts: localhost
+  roles:
+    - demo
+
+
