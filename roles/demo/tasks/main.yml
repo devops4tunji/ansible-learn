@@ -1,0 +1,3 @@
+- name: demo of roles
+  ansible.builtin.debug:
+    msg: "url"
