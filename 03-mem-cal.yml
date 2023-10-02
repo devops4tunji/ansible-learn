@@ -29,9 +29,9 @@
        ansible.builtin.shell: free | grep Mem | xargs
        register: free  #this is the variable i'm declaring
 
-     - name: setting a fact  # this is declaring something to be something using the set_fact module
-       ansible.builtin.set_fact:
-         FREE: "{{ free.stdout | split(' ') }}" #splitting what i want to see
+    
+    
+    
 
 
 
