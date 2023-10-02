@@ -26,7 +26,7 @@
    hosts: localhost
    tasks:
      - name: get memory
-       ansible.builtin.shell: free | grep Mem
+       ansible.builtin.shell: free | grep Mem | xargs
        register: free  #this is the variable i'm declaring
 
     
