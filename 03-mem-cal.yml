@@ -9,7 +9,7 @@
         msg: "{{free}}" #im declaring my variable here
 
 
-#wanting to see only  the free.stdout part of the free | grep mem
+#wanting to see only  the free.stdout part of the free below  | grep mem
 
 - name: print used memory
   hosts: localhost
