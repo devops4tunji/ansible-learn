@@ -31,4 +31,4 @@
 
      - name: setting a fact  # this is declaring something to be something using the set_fact module
        ansible.builtin.set_fact:
-       free: "{{free.stdout | split(' ') }}" #splitting what i want to see
+       free: "{{ free.stdout | split(' ') }}" #splitting what i want to see
