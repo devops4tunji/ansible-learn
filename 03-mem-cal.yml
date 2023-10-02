@@ -36,7 +36,7 @@
     
      - name: print free variable after setting a f
        ansible.builtin.debug:
-        msg: "{{ FREE[1] }}"
+        msg: "{{ FREE[2] }}"
 
 
 
