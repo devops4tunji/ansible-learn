@@ -31,8 +31,8 @@
 
      - name: setting a fact  # this is declaring something to be something using the set_fact module
        ansible.builtin.set_fact:
-       free: "{{ free.stdout | split(' ') }}" #splitting what i want to see
+       FREE: "{{ free.stdout | split(' ') }}" #splitting what i want to see
 
      - name: print free variable after setting a fact
        ansible.builtin.debug:
-         msg: "{{ free[1] }}"
+         msg: "{{ FREE[1] }}"
