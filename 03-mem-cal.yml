@@ -33,9 +33,9 @@
        ansible.builtin.set_fact:
          FREE: "{{ free.stdout | split(' ') }}" #splitting what i want to see
 
-     - name: print free variable after setting a fact
-       ansible.builtin.set_fact:
-         total: "{{ FREE[1] }}"
-         free: "{{ FREE[3] }}"
+
+
+
+
 
 
