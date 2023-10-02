@@ -3,7 +3,7 @@
   tasks:
     - name: get memory
       ansible.builtin.shell: free | grep Mem
-      register: free  # this is the variable i'm declaring
+      register: free  #this is the variable i'm declaring
     - name: print free variable
       ansible.builtin.debug:
-        msg: {{free}} # im declaring my varible here
+        msg: {{free}} #im declaring my variable here
