@@ -35,7 +35,7 @@
 
     
      - name: print free variable after setting a fact
-       ansible.builtin.debug:
+       ansible.builtin.set_fact:
          total: "{{ FREE[1] }}"
          free: "{{ FREE[3] }}"
 
